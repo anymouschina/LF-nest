@@ -1,15 +1,34 @@
 <template>
-  <div class="show-grid">
+  <div class="edit-wrapper">
+    <div class="editor-container">
+      <div class=" show-grid">
 
+      </div>
+    </div>
+   
+    <div>
+      <DraggableBox></DraggableBox>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
+import DraggableBox from './components/DraggableBox.vue'
 </script>
 
-<style lang="scss">
-   .show-grid {
+<style lang="scss" scoped>
+
+.edit-wrapper{
+  display: flex;
+  .editor-container{
+  width:1024px;
+  max-width: 1292px;
+  height: 1024px;
+}
+
+}
+
+.show-grid {
     width: 100%;
     max-width: 1292px;
     height: 2400px;
